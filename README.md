@@ -16,7 +16,8 @@ Creates a bar graph, a pie chart and a legend
 3. Include pie-bar-graph.js and pie-bar-graph.css in your index file
 
 4. Create a configuration object, dummy object is given below-
-	config = {
+	```
+    config = {
 			width: 600, 				//width of the entire container
 			height: 350, 				//height of the entire container
 			valueProp: 'value',			//Object property under which numeric value is stored
@@ -26,6 +27,7 @@ Creates a bar graph, a pie chart and a legend
 			ratio: 0.4, 				//(Optional) Ratio of bar graph width to total 'width' (default: 0.5)
 			marginV: 30					//(Optional) Vertical margin inside the containing element (default: 30)
 		}
+    ```
 
 5. Instantiate the function and pass in config and data
 
