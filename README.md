@@ -33,7 +33,7 @@ Creates a bar graph, a pie chart and a legend
 
 #IMPORTANT POINTS-
 1. Names should be same for label and value properties for both inner and outer object
-2. Objects inside sub property array should be in same order through out the entire passed in object
+2. Objects inside sub property array should be in same order throughout the passed in object
 3. Object at level one will be shown in pie chart and inner object will be shown in bar graph. A dummy object is given in index.html
 4. Outer Object (at level one) should necessarily have an 'id' property, which must be unique in the entire object hierarchy
 5. Pass all the numeric values as number and not as string
