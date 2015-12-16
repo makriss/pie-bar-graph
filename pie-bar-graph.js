@@ -71,11 +71,14 @@ graphChart = function(config, obj){
 		var temp = {};
 		var total = 0;
 		for(var i in data){
+			var subTotal = 0; //sums up all inner objects value
 			if(data.hasOwnProperty(i)){
 				data[i][config.subProp].forEach(function(item){
 					if(!temp[item[config.labelProp]]) temp[item[config.labelProp]] = 0;
 					temp[item[config.labelProp]]+=item[config.valueProp];
+					subTotal+=item[config.valueProp];
 				})
+				data[i][config.valueProp] = subTotal;
 				total+=data[i][config.valueProp];
 			}
 		}
